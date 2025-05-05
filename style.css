@@ -1,0 +1,269 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body .btn {
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: white;
+}
+body .btn svg {
+  margin-right: 13px;
+}
+body .btn:hover {
+  border-color: white;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 32px 0;
+  z-index: 9;
+}
+header ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+header ul li a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: white;
+  opacity: 50%;
+  text-decoration: none;
+}
+header ul li:hover a {
+  opacity: 1;
+}
+
+#baner {
+  background-image: url("img/baner.png");
+  min-height: 900px;
+  background-position: bottom center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#baner:before {
+  content: " ";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.55);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#baner img {
+  position: absolute;
+  bottom: 0;
+  max-width: 50%;
+}
+#baner .heading {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+#baner .title {
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 84px;
+  letter-spacing: 0%;
+  color: white;
+  display: inline-block;
+}
+#baner .signature {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+#baner .line {
+  margin-top: 110px;
+  margin-bottom: 70px;
+  position: relative;
+}
+#baner .line:before {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: #555555;
+}
+#baner .line:after {
+  content: " ";
+  background-color: #EF8213;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 50%;
+  top: -6px;
+}
+
+#nasze-dzialania {
+  margin-top: 192px;
+}
+#nasze-dzialania .heading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+#nasze-dzialania .title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+#nasze-dzialania .boxs {
+  margin-top: 270px;
+  background-color: #EF8213;
+}
+#nasze-dzialania .boxs .box {
+  margin-bottom: 16px;
+}
+#nasze-dzialania .boxs .box a {
+  padding: 32px 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+}
+#nasze-dzialania .boxs .box a .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#efekty {
+  background-color: #1E1E1D;
+  padding: 144px 0;
+}
+#efekty .header {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+#efekty .title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+#efekty .content {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: white;
+}
+#efekty .masonry {
+  padding: 120px 0 0 24px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 56px;
+     -moz-column-gap: 56px;
+          column-gap: 56px;
+}
+#efekty .masonry .box {
+  border: 1px solid #404040;
+  padding: 56px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
+  margin: 0 0 40px;
+}
+#efekty .masonry .box .name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 24px;
+  line-height: 34px;
+}
+#efekty .masonry .box .desc {
+  color: #8C8C8C;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-bottom: 32px;
+}
+#efekty .masonry .box .more {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#efekty .masonry .box .more svg {
+  margin-right: 16px;
+}

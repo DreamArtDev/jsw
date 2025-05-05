@@ -1,0 +1,203 @@
+#baner{
+    background-image: url('img/baner.png');
+    min-height: 900px;
+    background-position: bottom center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &:before{
+        content:' ';
+        position: absolute;
+        background-color: rgba(0,0,0,0.55);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        position: absolute;
+        bottom: 0;
+        max-width: 50%;
+    }
+
+    .heading{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        opacity: 0.7;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .title{
+        font-weight: 600;
+        font-size: 76px;
+        line-height: 84px;
+        letter-spacing: 0%;
+        color: white;
+        display: inline-block;
+    }
+
+    .signature{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: white;
+        opacity: 0.8;
+        margin-bottom: 40px;
+    }
+
+    .line{
+        margin-top: 110px;
+        margin-bottom: 70px;
+        position: relative;
+
+        &:before{
+            content:' ';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            background: #555555;
+        }
+
+        &:after{
+            content:' ';
+            background-color: $orange;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            border-radius: 50%;
+            top: -6px;
+        }
+    }
+}
+
+#nasze-dzialania{
+    margin-top: 192px;
+
+    .heading{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        margin-bottom:20px;
+    }
+
+    .title{
+        @include h1;
+    }
+
+    .boxs{
+        margin-top: 270px;
+        background-color: $orange;
+        .box{
+            margin-bottom: 16px;
+            a{
+                padding: 32px 35px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                font-size: 26px;
+                font-weight: 600;
+
+                .name{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+#efekty{
+    background-color: #1E1E1D;
+    padding: 144px 0;
+
+    .header{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 1%;
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+    }
+
+    .content{
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        color: white;
+    }
+
+    .masonry{
+        padding: 120px 0 0 24px;
+        column-count: 2;
+        column-gap: 56px;
+        .box{
+            border: 1px solid #404040;
+            padding: 56px;
+            display: inline-block;
+            box-sizing: border-box;
+            break-inside: avoid;
+            margin: 0 0 40px;
+
+            .name{
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: white;    
+                margin-bottom: 24px;        
+                line-height: 34px;    
+            }
+
+            .desc{
+                color: #8C8C8C;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 0%;
+                margin-bottom: 32px;
+            }
+
+            .more{
+                color: white;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                
+                svg{
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

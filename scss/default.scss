@@ -1,0 +1,29 @@
+body{
+    font-family: $font;
+
+    .btn{
+        border: 1px solid #B7B7B7;
+        border-radius: 4px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        color: white;
+
+        svg{
+            margin-right: 13px;
+        }
+
+        &:hover{
+            border-color: white;
+            color: white;
+        }
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+

@@ -1,0 +1,17 @@
+$font: "Plus Jakarta Sans", sans-serif;
+
+// colors
+$orange:#EF8213;
+
+// h
+
+@mixin h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+
+}
