@@ -61,8 +61,8 @@ header ul li:hover a {
 #baner {
   background-image: url("img/baner.png");
   min-height: 900px;
-  background-position: bottom center;
-  background-size: contain;
+  background-position: top center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +73,7 @@ header ul li:hover a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow: hidden;
 }
 #baner:before {
   content: " ";
@@ -123,7 +124,7 @@ header ul li:hover a {
 }
 #baner .line:before {
   content: " ";
-  width: 100%;
+  width: 200%;
   height: 1px;
   position: absolute;
   background: #555555;
@@ -137,9 +138,22 @@ header ul li:hover a {
   border-radius: 50%;
   top: -6px;
 }
+#baner .more {
+  border: 1px solid #EF8213;
+  border-radius: 50%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 56px;
+  height: 56px;
+  margin-left: auto;
+  place-items: center;
+}
+#baner .more:hover svg path {
+  stroke: #EF8213;
+}
 
 #nasze-dzialania {
-  margin-top: 192px;
+  padding-top: 192px;
 }
 #nasze-dzialania .heading {
   font-weight: 400;
@@ -163,9 +177,14 @@ header ul li:hover a {
 #nasze-dzialania .boxs {
   margin-top: 270px;
   background-color: #EF8213;
+  background-image: url("img/efekty.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 #nasze-dzialania .boxs .box {
   margin-bottom: 16px;
+  position: relative;
+  top: -130px;
 }
 #nasze-dzialania .boxs .box a {
   padding: 32px 35px;
@@ -175,18 +194,20 @@ header ul li:hover a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   color: white;
   text-decoration: none;
   font-size: 26px;
   font-weight: 600;
+  line-height: 30px;
 }
 #nasze-dzialania .boxs .box a .name {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-right: 20px;
 }
 
 #efekty {
@@ -207,9 +228,12 @@ header ul li:hover a {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
+  text-align: center;
   text-transform: uppercase;
+  color: black;
   color: white;
   margin: 0;
+  text-align: left;
 }
 #efekty .content {
   font-weight: 500;
@@ -266,4 +290,201 @@ header ul li:hover a {
 }
 #efekty .masonry .box .more svg {
   margin-right: 16px;
+}
+
+#faq {
+  padding: 120px 0;
+}
+#faq .header {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+#faq .title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+  text-align: left;
+}
+#faq .content {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: black;
+}
+#faq .questions {
+  border-top: 1px solid #E9E9E9;
+  padding-top: 64px;
+  margin-top: 64px;
+}
+#faq .questions .contact {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0%;
+}
+#faq .questions .contact a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0%;
+  color: #EF8213;
+}
+#faq .questions .accordion .accordion-item {
+  margin-bottom: 12px;
+  border: none;
+}
+#faq .questions .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+#faq .questions .accordion .accordion-item .accordion-header button {
+  background-color: transparent;
+  padding: 16px 24px;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #ABABAD;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+#faq .questions .accordion .accordion-item .accordion-header button:after {
+  display: none !important;
+}
+#faq .questions .accordion .accordion-item .accordion-header button .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 50px;
+}
+#faq .questions .accordion .accordion-item .accordion-header button .show {
+  width: 48px;
+  height: 48px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 1px solid #EF8213;
+  border-radius: 50%;
+  background-color: #EF8213;
+}
+#faq .questions .accordion .accordion-item .accordion-header button .show .plus {
+  display: none;
+}
+#faq .questions .accordion .accordion-item .accordion-header button .show:hover {
+  background-color: #EF8213;
+}
+#faq .questions .accordion .accordion-item .accordion-header button .show:hover .plus path {
+  stroke: #EF8213;
+}
+#faq .questions .accordion .accordion-item .accordion-header button.collapsed {
+  font-weight: 500;
+  background-color: #F5F5F5;
+  border: none;
+}
+#faq .questions .accordion .accordion-item .accordion-header button.collapsed .show {
+  background-color: transparent;
+}
+#faq .questions .accordion .accordion-item .accordion-header button.collapsed .show .minus {
+  display: none;
+}
+#faq .questions .accordion .accordion-item .accordion-header button.collapsed .show .plus {
+  display: block;
+}
+#faq .questions .accordion .accordion-item .accordion-collapse {
+  border: 1px solid transparent;
+}
+#faq .questions .accordion .accordion-item .accordion-collapse .accordion-body {
+  color: #878787;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding: 20px 98px 20px 24px;
+}
+#faq .questions .accordion .accordion-item .accordion-collapse.show, #faq .questions .accordion .accordion-item .accordion-collapse.collapsing {
+  border: 1px solid #ABABAD;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+#aktualnosci {
+  padding: 120px 0;
+  background-color: #F5F5F5;
+}
+#aktualnosci .header {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+#aktualnosci .title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+}
+#aktualnosci .posts {
+  margin-top: 72px;
+}
+#aktualnosci .posts .post {
+  padding-bottom: 50px;
+  height: 100%;
+}
+#aktualnosci .posts .post .category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  background-color: #ABABAD;
+  color: white;
+  border-radius: 4px;
+}
+#aktualnosci .posts .post .category.aktualnosci {
+  background-color: #EF8213;
+}
+#aktualnosci .posts .post .name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: black;
+  display: block;
+  margin-bottom: 16px;
+  text-align: left;
+  margin-top: 32px;
+  text-decoration: none;
+}
+#aktualnosci .posts .post .date {
+  color: #5D5D5D;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  position: absolute;
+  bottom: 0;
 }
