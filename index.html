@@ -17,29 +17,43 @@
     <header>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="logo">
                         <img src="img/logo.svg" alt="Logo jsw">
                     </div>
                 </div>
-                <nav class="col-md-6">
-                    <ul>
-                        <li><a href="#nasze-dzialania">NASZE DZIAŁANIA</a></li>
-                        <li><a href="#efekty">EFEKTY</a></li>
-                        <li><a href="#faq">PYTANIA I ODPOWIEDZI</a></li>
-                        <li><a href="#aktualnosci">AKTUALNOŚCI</a></li>
-                    </ul>
-                </nav>
-                <div class="col-md-3 text-end">
-                    <a href="#kontakt" class="btn">
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.5583 16.8475C10.3088 16.7332 10.0593 16.6188 9.80977 16.4837C8.58736 15.7934 7.46462 14.94 6.47242 13.9469C5.18595 12.7361 4.12924 11.3026 3.35342 9.71542C2.93775 8.86292 2.65715 7.951 2.52169 7.01228C2.33724 6.06413 2.44229 5.08242 2.8232 4.19478C3.05795 3.81339 3.341 3.46395 3.66533 3.15511C3.7968 3.00786 3.95665 2.88867 4.1353 2.80471C4.31395 2.72074 4.50772 2.67372 4.70499 2.66648C5.11562 2.72793 5.48741 2.94356 5.74466 3.26948C6.30608 3.89328 6.90908 4.45469 7.50169 5.0473C7.73503 5.24749 7.88059 5.53116 7.90717 5.83744C7.89717 6.09516 7.79793 6.34139 7.62646 6.53403C7.42892 6.78354 7.1898 7.01227 6.96107 7.25139C6.82302 7.3843 6.71746 7.54724 6.65254 7.72754C6.58764 7.90779 6.56514 8.10063 6.58679 8.29104C6.72961 8.73692 6.97535 9.14292 7.30415 9.47634C7.69922 10.0169 8.0943 10.5159 8.54136 11.0462C9.34461 11.9737 10.2968 12.7607 11.3588 13.375C11.5056 13.4859 11.6792 13.5559 11.8619 13.5779C12.0445 13.5998 12.2297 13.5728 12.3985 13.4998C12.7515 13.3023 13.0653 13.0415 13.3238 12.7305C13.5474 12.458 13.8679 12.2828 14.2179 12.2418C14.5294 12.2576 14.8229 12.3915 15.0393 12.6161C15.3199 12.8552 15.5591 13.1359 15.8189 13.3958C16.0789 13.6557 16.2869 13.8429 16.5052 14.082C16.7666 14.3123 17.0132 14.5588 17.2433 14.8202C17.4218 15.051 17.5072 15.3404 17.4824 15.6311C17.3899 15.9787 17.1897 16.2879 16.9107 16.5148C16.5183 16.923 16.0414 17.2406 15.5134 17.4453C14.9854 17.65 14.4191 17.737 13.854 17.7001C12.71 17.6358 11.5899 17.3462 10.5583 16.8475Z" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M14.9087 9.33167C14.9087 8.21357 14.4646 7.14123 13.674 6.35061C12.8834 5.55998 11.811 5.11582 10.6929 5.11582" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M17.7976 9.037C17.7976 7.24804 17.0869 5.53233 15.8219 4.26733C14.5569 3.00233 12.8412 2.29167 11.0522 2.29167" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        </svg>     
-                        KONTAKT Z NAMI                       
-                    </a>
+                <div class="col-md-9 col-6 text-end">
+                    <div id="mobileToggle" class="d-md-none">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 16.0087H26" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M6 23.701H26" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M6 8.31641H26" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="mobile_toggle">
+                        <div class="row align-items-center">
+                            <nav class="col-md-8">
+                                <ul>
+                                    <li><a href="#nasze-dzialania">NASZE DZIAŁANIA</a></li>
+                                    <li><a href="#efekty">EFEKTY</a></li>
+                                    <li><a href="#faq">PYTANIA I ODPOWIEDZI</a></li>
+                                    <li><a href="#aktualnosci">AKTUALNOŚCI</a></li>
+                                </ul>
+                            </nav>
+                            <div class="col-md-4 text-end">
+                                <a href="#kontakt" class="btn">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5583 16.8475C10.3088 16.7332 10.0593 16.6188 9.80977 16.4837C8.58736 15.7934 7.46462 14.94 6.47242 13.9469C5.18595 12.7361 4.12924 11.3026 3.35342 9.71542C2.93775 8.86292 2.65715 7.951 2.52169 7.01228C2.33724 6.06413 2.44229 5.08242 2.8232 4.19478C3.05795 3.81339 3.341 3.46395 3.66533 3.15511C3.7968 3.00786 3.95665 2.88867 4.1353 2.80471C4.31395 2.72074 4.50772 2.67372 4.70499 2.66648C5.11562 2.72793 5.48741 2.94356 5.74466 3.26948C6.30608 3.89328 6.90908 4.45469 7.50169 5.0473C7.73503 5.24749 7.88059 5.53116 7.90717 5.83744C7.89717 6.09516 7.79793 6.34139 7.62646 6.53403C7.42892 6.78354 7.1898 7.01227 6.96107 7.25139C6.82302 7.3843 6.71746 7.54724 6.65254 7.72754C6.58764 7.90779 6.56514 8.10063 6.58679 8.29104C6.72961 8.73692 6.97535 9.14292 7.30415 9.47634C7.69922 10.0169 8.0943 10.5159 8.54136 11.0462C9.34461 11.9737 10.2968 12.7607 11.3588 13.375C11.5056 13.4859 11.6792 13.5559 11.8619 13.5779C12.0445 13.5998 12.2297 13.5728 12.3985 13.4998C12.7515 13.3023 13.0653 13.0415 13.3238 12.7305C13.5474 12.458 13.8679 12.2828 14.2179 12.2418C14.5294 12.2576 14.8229 12.3915 15.0393 12.6161C15.3199 12.8552 15.5591 13.1359 15.8189 13.3958C16.0789 13.6557 16.2869 13.8429 16.5052 14.082C16.7666 14.3123 17.0132 14.5588 17.2433 14.8202C17.4218 15.051 17.5072 15.3404 17.4824 15.6311C17.3899 15.9787 17.1897 16.2879 16.9107 16.5148C16.5183 16.923 16.0414 17.2406 15.5134 17.4453C14.9854 17.65 14.4191 17.737 13.854 17.7001C12.71 17.6358 11.5899 17.3462 10.5583 16.8475Z" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                        <path d="M14.9087 9.33167C14.9087 8.21357 14.4646 7.14123 13.674 6.35061C12.8834 5.55998 11.811 5.11582 10.6929 5.11582" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                        <path d="M17.7976 9.037C17.7976 7.24804 17.0869 5.53233 15.8219 4.26733C14.5569 3.00233 12.8412 2.29167 11.0522 2.29167" stroke="#EF8213" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </svg>     
+                                    KONTAKT Z NAMI                       
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -59,8 +73,8 @@
                         <p class="title">Razem wydobywamy potencjał JSW</p>
                     </div>
                 </div>
-                <div class="col-9 offset-3 line"></div>
-                <div class="col-md-5 offset-md-4">
+                <div class="col-9 offset-3 line d-md-block d-none"></div>
+                <div class="col-md-5 offset-md-4 d-md-block d-none">
                     <p class="signature">
                         Rozpoczęliśmy największą transformację w historii JSW – sprawdź, jak działania podjęte dziś zapewnią naszej firmie stabilność i rozwój na kolejne lata.
                     </p>
@@ -496,8 +510,8 @@
 
     <section id="aktualnosci">
         <div class="container">
-            <p class="heading text-center">NASZE DZIAŁANIA</p>
-            <p class="title">AKTUALNOŚCI I MEDIA</p>
+            <p class="header text-center">NASZE DZIAŁANIA</p>
+            <p class="title text-center">AKTUALNOŚCI I MEDIA</p>
 
             <div class="posts">
                 <div class="row">

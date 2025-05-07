@@ -51,7 +51,17 @@ header {
 header.border_bottom {
   border-bottom: 1px solid #303030;
 }
-header ul {
+header #mobileToggle {
+  display: inline-block;
+  border: 1px solid #4F4F4F;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  header .mobile_toggle {
+    display: none;
+  }
+}
+header .mobile_toggle ul {
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -65,7 +75,7 @@ header ul {
      -moz-column-gap: 50px;
           column-gap: 50px;
 }
-header ul li a {
+header .mobile_toggle ul li a {
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
@@ -74,7 +84,7 @@ header ul li a {
   opacity: 50%;
   text-decoration: none;
 }
-header ul li:hover a {
+header .mobile_toggle ul li:hover a {
   opacity: 1;
 }
 
@@ -115,6 +125,16 @@ header ul li:hover a {
   right: 0;
   bottom: 24px;
   margin: auto;
+}
+#header .aktualnosci_left_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#header .aktualnosci_right_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 footer {
@@ -233,6 +253,13 @@ footer .copy .social .item {
           justify-content: flex-end;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  #baner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 #baner:before {
   content: " ";
   position: absolute;
@@ -265,6 +292,14 @@ footer .copy .social .item {
   letter-spacing: 0%;
   color: white;
   display: inline-block;
+}
+@media (max-width: 767px) {
+  #baner .title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 51px;
+    letter-spacing: 0%;
+  }
 }
 #baner .signature {
   font-weight: 400;
@@ -313,6 +348,11 @@ footer .copy .social .item {
 #nasze-dzialania {
   padding-top: 192px;
 }
+@media (max-width: 767px) {
+  #nasze-dzialania {
+    padding-top: 120px;
+  }
+}
 #nasze-dzialania .heading {
   font-weight: 400;
   font-size: 12px;
@@ -328,9 +368,16 @@ footer .copy .social .item {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
-  text-align: center;
   text-transform: uppercase;
   color: black;
+}
+@media (max-width: 767px) {
+  #nasze-dzialania .title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 1%;
+  }
 }
 #nasze-dzialania .boxs {
   margin-top: 270px;
@@ -338,11 +385,37 @@ footer .copy .social .item {
   background-image: url("img/efekty.png");
   background-repeat: no-repeat;
   background-position: top right;
+  position: relative;
+}
+@media (max-width: 767px) {
+  #nasze-dzialania .boxs {
+    background: transparent;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  #nasze-dzialania .boxs:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #EF8213;
+    z-index: -1;
+  }
 }
 #nasze-dzialania .boxs .box {
   margin-bottom: 16px;
   position: relative;
   top: -130px;
+}
+@media (max-width: 767px) {
+  #nasze-dzialania .boxs .box {
+    top: 0;
+  }
+}
+#nasze-dzialania .boxs .box img {
+  width: 100%;
 }
 #nasze-dzialania .boxs .box a {
   padding: 32px 35px;
@@ -361,6 +434,11 @@ footer .copy .social .item {
   font-weight: 600;
   line-height: 30px;
 }
+@media (max-width: 767px) {
+  #nasze-dzialania .boxs .box a {
+    font-size: 20px;
+  }
+}
 #nasze-dzialania .boxs .box a .name {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -371,6 +449,11 @@ footer .copy .social .item {
 #efekty {
   background-color: #1E1E1D;
   padding: 144px 0;
+}
+@media (max-width: 767px) {
+  #efekty {
+    padding: 72px 0;
+  }
 }
 #efekty .header {
   font-weight: 400;
@@ -386,12 +469,18 @@ footer .copy .social .item {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
-  text-align: center;
   text-transform: uppercase;
   color: black;
   color: white;
   margin: 0;
   text-align: left;
+}
+@media (max-width: 767px) {
+  #efekty .title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 32px;
+  }
 }
 #efekty .content {
   font-weight: 500;
@@ -409,6 +498,11 @@ footer .copy .social .item {
      -moz-column-gap: 56px;
           column-gap: 56px;
 }
+@media (max-width: 767px) {
+  #efekty .masonry {
+    padding: 80px 0 0 0;
+  }
+}
 #efekty .masonry .box {
   border: 1px solid #404040;
   padding: 56px;
@@ -420,6 +514,11 @@ footer .copy .social .item {
           break-inside: avoid;
   margin: 0 0 40px;
 }
+@media (max-width: 767px) {
+  #efekty .masonry .box {
+    padding: 24px;
+  }
+}
 #efekty .masonry .box .name {
   font-weight: 600;
   font-size: 28px;
@@ -428,6 +527,11 @@ footer .copy .social .item {
   color: white;
   margin-bottom: 24px;
   line-height: 34px;
+}
+@media (max-width: 767px) {
+  #efekty .masonry .box .name {
+    font-size: 24px;
+  }
 }
 #efekty .masonry .box .desc {
   color: #8C8C8C;
@@ -467,7 +571,6 @@ footer .copy .social .item {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
-  text-align: center;
   text-transform: uppercase;
   color: black;
   margin: 0;
@@ -602,17 +705,16 @@ footer .copy .social .item {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
-  text-align: center;
   text-transform: uppercase;
   color: black;
   margin: 0;
   margin-bottom: 72px;
 }
 #aktualnosci .heading {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 58px;
-  letter-spacing: 1%;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: black;
   margin: 0;
   margin-bottom: 32px;
@@ -699,7 +801,6 @@ footer .copy .social .item {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 1%;
-  text-align: center;
   text-transform: uppercase;
   color: black;
   margin: 0;
@@ -825,4 +926,157 @@ footer .copy .social .item {
   line-height: 29px;
   letter-spacing: 0%;
   color: #5D5D5D;
+}
+
+.post #header {
+  padding-bottom: 400px;
+}
+.post #header .container {
+  max-width: 900px;
+}
+.post #header h1 {
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 75px;
+  letter-spacing: 0%;
+  margin: 24px 0;
+}
+.post #header .back {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.post #header .back svg {
+  margin-right: 22px;
+}
+.post #header .back:hover {
+  color: #EF8213;
+}
+.post #header .meta {
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.post #header .meta .date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+.post #header .meta .author {
+  color: #888888;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.post #header .meta .author span {
+  color: white;
+}
+.post .thumb {
+  position: relative;
+  margin: -330px 0 100px 0;
+}
+.post #content .container .author {
+  border-top: 1px solid #CDCDCD;
+  margin-top: 82px;
+  padding-top: 42px;
+  margin-bottom: 140px;
+}
+.post #content .container .author .desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 16px;
+}
+.post #content .container .author .desc .name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0%;
+  color: black;
+  margin: 0;
+}
+.post #content .container .author .desc .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #979797;
+  margin: 0;
+}
+
+#content .container {
+  max-width: 900px;
+}
+#content .container h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: black;
+  margin: 24px 0;
+}
+#content .container h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  margin: 24px 0;
+}
+#content .container h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 58px;
+  letter-spacing: 1%;
+  color: black;
+  margin: 16px 0;
+}
+#content .container h5 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  margin: 16px 0;
+}
+#content .container p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0%;
+  color: #6F6F6F;
+  margin-bottom: 16px;
+}
+#content .container p.big {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0%;
+  color: black;
+}
+#content .container figure {
+  margin: 50px 0;
+}
+#content .container figure figcaption {
+  border-left: 2px solid #EF8213;
+  padding-left: 8px;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ABABAD;
+}
+
+.page #content {
+  margin: 110px 0;
 }
