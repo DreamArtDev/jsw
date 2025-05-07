@@ -1,0 +1,109 @@
+footer{
+    background-color: #1E1E1D;
+    padding: 120px 0;
+
+    .footer_title{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: white;
+        margin: 0;
+    }
+
+    .up{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: rgba(255,255,255,0.8);  
+        text-decoration: none;
+
+        span{
+            width: 56px;
+            height: 56px;
+            border: 1px solid $orange;
+            display: inline-grid;
+            place-items: center;
+            margin-left: 24px;
+            border-radius: 50%;
+        }
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 40px 0 0 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 24px;
+        max-width: 750px;
+
+        li{
+            a{
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 100%;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: white;
+                opacity: 0.5;
+                text-decoration: none;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .copy{
+        border-top: 1px solid #E4E4E4;
+        padding-top: 85px;
+        margin-top: 85px;
+        position: relative;
+
+        &:before{
+            content:' ';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background:$orange;
+            border-radius: 50%;
+            left: 0;
+            top: -6px;
+        }
+
+        .copyright{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .social{
+            .name{
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: white;
+                margin-right: 36px;
+                margin-bottom: 0;
+            }
+
+            .item{
+                background-color: #2F2F2F;
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                margin-right: 13px;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}

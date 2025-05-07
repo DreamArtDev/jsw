@@ -11,6 +11,27 @@ body{
         letter-spacing: 2px;
         color: white;
 
+        &.black_color{
+            color: black;
+
+            &:hover{
+                background-color: transparent;
+                color: black;
+                border-color: black;
+            }
+        }
+
+        &.black{
+            background-color: black;
+            border-color: black;
+
+            &:hover{
+                background-color: transparent;
+                color: black;
+                border-color: black;
+            }
+        }
+
         svg{
             margin-right: 13px;
         }
